@@ -14,6 +14,7 @@ const mongoConnect = () => {
       },
       user: process.env.MONGO_USERNAME,
       pass: process.env.MONGO_PASSWORD,
+      connectTimeoutMS: 10000,
     },
     (error) => {
       if (error) {
