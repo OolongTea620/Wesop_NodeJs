@@ -21,6 +21,7 @@ const mongoConnect = () => {
         console.log("Fail connect MongoDB", error);
       } else {
         console.log("Success connect MongoDB");
+        console.log("dbName", process.env.MONGO_DB_NAME);
       }
     }
   );

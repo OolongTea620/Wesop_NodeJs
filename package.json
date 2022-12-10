@@ -4,8 +4,9 @@
   "description": "Wesop clone coding with Nodejs(for study)",
   "main": "app.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --runInBand",
-    "start": "nodemon server.js"
+    "test": "NODE_ENV=test jest --runInBand ",
+    "dev": "NODE_ENV=develop nodemon server.js",
+    "start" : " NODE_ENV=production nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,10 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.7.5"
+    "mongoose": "^6.7.5",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0",
+    "sequelize-cli": "^6.5.2"
   },
   "devDependencies": {
     "jest": "^29.0.3",
